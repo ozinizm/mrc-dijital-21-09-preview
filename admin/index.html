@@ -1,0 +1,1149 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MRC Dijital Panel | Yönetim & Sayfa Kontrol Merkezi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <script type="module" crossorigin src="../assets/admin-BaiF4XGf.js"></script>
+  <link rel="modulepreload" crossorigin href="../assets/data-store-DvxqMFlW.js">
+  <link rel="stylesheet" crossorigin href="../assets/admin-BXDDiYY4.css">
+</head>
+<body>
+  <div class="admin-wrapper">
+    <!-- Sidebar -->
+    <aside class="admin-sidebar">
+      <div class="sidebar-brand">
+        <div class="brand-badge">MRC</div>
+        <div class="brand-text">
+          <span class="brand-title">YÖNETİM PANELİ</span>
+          <span class="brand-sub">v2.4 Full-Control</span>
+        </div>
+      </div>
+
+      <nav class="sidebar-nav">
+        <button class="nav-item active" data-tab="dashboard">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+          Genel Bakış
+        </button>
+        <button class="nav-item" data-tab="services">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m10 15 5-3-5-3v6Z"/></svg>
+          Hizmet Yönetimi
+        </button>
+        <button class="nav-item" data-tab="app-control">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></svg>
+          Uygulama & Teknolojiler
+        </button>
+        <button class="nav-item" data-tab="references">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          Referans Yönetimi
+        </button>
+        <button class="nav-item" data-tab="blogs">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M6 6h10"/><path d="M6 10h10"/></svg>
+          Blog & İçerik
+        </button>
+        <button class="nav-item" data-tab="pages">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><line x1="9" y1="15" x2="15" y2="15"/></svg>
+          Sayfa Yöneticisi <span class="badge-accent">Yeni</span>
+        </button>
+        <button class="nav-item" data-tab="popup">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+          Kampanya & Popup <span class="badge-accent">Yeni</span>
+        </button>
+        <button class="nav-item" data-tab="footer">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="15" width="18" height="6" rx="2"/><path d="M3 9h18"/><path d="M3 3h18"/></svg>
+          Genel Footer Yönetimi
+        </button>
+        <button class="nav-item" data-tab="navigation">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+          Header Menü
+        </button>
+        <button class="nav-item" data-tab="theme">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="13.5" cy="6.5" r=".5"/><circle cx="17.5" cy="10.5" r=".5"/><circle cx="8.5" cy="7.5" r=".5"/><circle cx="6.5" cy="12.5" r=".5"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"/></svg>
+          Tema & Vurgu Rengi <span class="badge-accent">Yeni</span>
+        </button>
+        <button class="nav-item" data-tab="tracking">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+          Piksel & Reklam Takibi <span class="badge-accent">Meta & GA4</span>
+        </button>
+        <button class="nav-item" data-tab="settings">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+          Site İletişim Bilgileri
+        </button>
+        <button class="nav-item" data-tab="inquiries">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          Gelen Talepler <span id="inquiryBadge" class="badge-count">0</span>
+        </button>
+      </nav>
+
+      <div class="sidebar-footer">
+        <a href="/" target="_blank" class="live-site-link">
+          <span>Canlı Siteyi Aç</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+        </a>
+        <button id="btnResetDefaults" class="btn-reset">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 2v6h6"/><path d="M21 12A9 9 0 0 0 6 5.3L3 8"/><path d="M21 22v-6h-6"/><path d="M3 12a9 9 0 0 0 15 6.7l3-2.7"/></svg>
+          MRC Orijinal Verilerine Sıfırla
+        </button>
+      </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="admin-main">
+      <!-- Top Header -->
+      <header class="admin-header">
+        <div class="header-left">
+          <h1 id="pageHeading" class="header-title">Genel Bakış & Sistem Durumu</h1>
+          <span class="header-sub">Tüm site içeriklerini tek panelden yönetin</span>
+        </div>
+        <div class="header-right">
+          <div class="status-indicator">
+            <span class="dot"></span>
+            <span>Veri Deposu: Aktif & Senkronize</span>
+          </div>
+          <a href="/hizmetler.html" target="_blank" class="btn-header-action">Hizmetleri İncele ↗</a>
+        </div>
+      </header>
+
+      <div class="admin-content-inner">
+        <!-- Toast Notification Area -->
+        <div id="toastNotification" class="toast-notification">Değişiklikler kaydedildi!</div>
+
+        <!-- TAB: DASHBOARD -->
+        <section id="tab-dashboard" class="admin-tab active">
+          <div class="stats-grid">
+            <div class="stat-box">
+              <span class="stat-label">Toplam Hizmet</span>
+              <span id="statServicesCount" class="stat-val">6</span>
+              <span class="stat-desc">Canlıda listelenen paket ve hizmetler</span>
+            </div>
+            <div class="stat-box">
+              <span class="stat-label">Uygulama & Teknoloji</span>
+              <span id="statAppsCount" class="stat-val">2</span>
+              <span class="stat-desc">MRC App, Sanal Kabin vb.</span>
+            </div>
+            <div class="stat-box">
+              <span class="stat-label">Aktif Referans</span>
+              <span id="statRefCount" class="stat-val">12</span>
+              <span class="stat-desc">Filtrelenebilir marka logoları</span>
+            </div>
+            <div class="stat-box">
+              <span class="stat-label">Blog Yazısı</span>
+              <span id="statBlogCount" class="stat-val">3</span>
+              <span class="stat-desc">SEO indeksli makaleler</span>
+            </div>
+            <div class="stat-box">
+              <span class="stat-label">Özel Sayfa</span>
+              <span id="statPageCount" class="stat-val">0</span>
+              <span class="stat-desc">Page Builder ile oluşturulanlar</span>
+            </div>
+            <div class="stat-box highlight">
+              <span class="stat-label">Gelen Müşteri Talebi</span>
+              <span id="statInquiryCount" class="stat-val">0</span>
+              <span class="stat-desc">Web formu & canlı destek</span>
+            </div>
+          </div>
+
+          <div class="quick-cards-grid">
+            <div class="quick-card">
+              <h3>⚡ Hızlı İşlemler</h3>
+              <div class="quick-actions">
+                <button class="btn-action" onclick="window.adminApp.switchTab('services'); window.adminApp.openServiceModal();">
+                  + Yeni Hizmet Ekle
+                </button>
+                <button class="btn-action" onclick="window.adminApp.switchTab('blogs'); window.adminApp.openBlogModal();">
+                  + Yeni Blog Yazısı Yaz
+                </button>
+                <button class="btn-action" onclick="window.adminApp.switchTab('references'); window.adminApp.openRefModal();">
+                  + Yeni Referans Logo Ekle
+                </button>
+                <button class="btn-action btn-highlight" onclick="window.adminApp.switchTab('pages'); window.adminApp.openPageModal();">
+                  + Yeni Özel Sayfa Oluştur
+                </button>
+              </div>
+            </div>
+
+            <div class="quick-card">
+              <h3>📱 MRC Dijital App Durumu</h3>
+              <p class="card-p">WhatsApp Müşteri Analizi ve Sepet Terk Kurtarma otomasyonu aktiftir. Detaylar ve metinler "MRC Dijital App" sekmesinden anında düzenlenebilir.</p>
+              <div class="app-status-row">
+                <span class="pill-badge green">Aktif & Yayında</span>
+                <a href="./hizmetler.html#mrc-app" target="_blank" class="link-small">Sayfada Gör ↗</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- TAB: SERVICES & PRODUCTS -->
+        <section id="tab-services" class="admin-tab">
+          <div class="tab-header-row">
+            <div>
+              <h2>Hizmet & Ürün / Yazılım Yönetimi</h2>
+              <p class="text-muted">Ajans hizmetlerini, özel geliştirilen yazılım ürünlerini (Örn: MRC App) ve paketleri yönetin.</p>
+            </div>
+            <button class="btn-primary" id="btnAddNewService">+ Yeni Hizmet / Ürün Ekle</button>
+          </div>
+
+          <div style="display: flex; gap: 8px; margin-bottom: 20px;">
+            <button class="filter-tab-btn active" id="svcFilterAll" onclick="window.adminApp.filterServices('all')">Tümü</button>
+            <button class="filter-tab-btn" id="svcFilterHizmet" onclick="window.adminApp.filterServices('Hizmet')">Sadece Hizmetler</button>
+            <button class="filter-tab-btn" id="svcFilterUrun" onclick="window.adminApp.filterServices('Ürün / Yazılım')">Ürün & Yazılımlar</button>
+            <button class="filter-tab-btn" id="svcFilterPaket" onclick="window.adminApp.filterServices('Paket')">Paketler</button>
+          </div>
+
+          <div class="table-responsive">
+            <table class="admin-table">
+              <thead>
+                <tr>
+                  <th>Tür</th>
+                  <th>Hizmet / Ürün Başlığı</th>
+                  <th>Kategori</th>
+                  <th>Fiyat / Rozet</th>
+                  <th>Özet Açıklama</th>
+                  <th>İşlemler</th>
+                </tr>
+              </thead>
+              <tbody id="servicesTableBody">
+                <!-- Dynamically populated -->
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- TAB: APPS & TECHNOLOGIES -->
+        <section id="tab-app-control" class="admin-tab">
+          <div class="tab-header-row">
+            <div>
+              <h2>Özel Uygulama & Teknoloji Yönetimi</h2>
+              <p class="text-muted">MRC'nin tescilli yazılımlarını (MRC App, Sanal Kabin vb.) yönetin; geliştirdiğiniz yeni uygulama ve özellikleri sisteme ekleyin.</p>
+            </div>
+            <button class="btn-primary" id="btnAddNewApp">+ Yeni Uygulama / Teknoloji Ekle</button>
+          </div>
+
+          <div class="apps-admin-grid" id="appsAdminGrid">
+            <!-- Dynamically populated app cards -->
+          </div>
+        </section>
+
+        <!-- TAB: REFERENCES -->
+        <section id="tab-references" class="admin-tab">
+          <div class="tab-header-row">
+            <div>
+              <h2>Referans & Marka Yönetimi</h2>
+              <p class="text-muted">Referanslarımız sayfasındaki ve ana sayfadaki marka logolarını ve kategorilerini düzenleyin.</p>
+            </div>
+            <button class="btn-primary" id="btnAddNewRef">+ Yeni Referans Ekle</button>
+          </div>
+
+          <div class="references-admin-grid" id="referencesAdminGrid">
+            <!-- Dynamically populated -->
+          </div>
+        </section>
+
+        <!-- TAB: BLOGS -->
+        <section id="tab-blogs" class="admin-tab">
+          <div class="tab-header-row">
+            <div>
+              <h2>Blog & Makale Yönetimi</h2>
+              <p class="text-muted">MRC uzmanlarının hazırladığı makaleleri düzenleyin, yeni blog içerikleri ekleyin.</p>
+            </div>
+            <button class="btn-primary" id="btnAddNewBlog">+ Yeni Blog Yazısı Yaz</button>
+          </div>
+
+          <div class="table-responsive">
+            <table class="admin-table">
+              <thead>
+                <tr>
+                  <th>Yazı Başlığı</th>
+                  <th>Kategori</th>
+                  <th>Tarih</th>
+                  <th>Okuma Süresi</th>
+                  <th>Görüntüle</th>
+                  <th>İşlemler</th>
+                </tr>
+              </thead>
+              <tbody id="blogsTableBody">
+                <!-- Dynamically populated -->
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- TAB: PAGES (PAGE BUILDER) -->
+        <section id="tab-pages" class="admin-tab">
+          <div class="tab-header-row">
+            <div>
+              <h2>Sayfa Yöneticisi (Page Builder)</h2>
+              <p class="text-muted">Sitenize dilediğiniz zaman yeni özel sayfalar (Örn: "Hakkımızda", "Gizlilik Politikası", "KVKK", "Ajans Kültürü") ekleyin.</p>
+            </div>
+            <button class="btn-primary" id="btnAddNewPage">+ Yeni Sayfa Oluştur</button>
+          </div>
+
+          <div class="table-responsive">
+            <table class="admin-table">
+              <thead>
+                <tr>
+                  <th>Sayfa Başlığı</th>
+                  <th>Slug (URL)</th>
+                  <th>Açıklama / Alt Başlık</th>
+                  <th>Canlı Link</th>
+                  <th>İşlemler</th>
+                </tr>
+              </thead>
+              <tbody id="pagesTableBody">
+                <!-- Dynamically populated -->
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- TAB: FOOTER MANAGER -->
+        <section id="tab-footer" class="admin-tab">
+          <div class="tab-header-row">
+            <div>
+              <h2>Genel Footer & Alt Bilgi Yönetimi</h2>
+              <p class="text-muted">Tüm sayfalarda en altta gösterilen 4 kolonlu zengin footer alanını, iletişim kanallarını, kolon başlıklarını ve sosyal medya linklerini buradan yönetin.</p>
+            </div>
+            <button class="btn-primary" id="btnSaveFooterSettings">Footer Ayarlarını Kaydet</button>
+          </div>
+
+          <form id="footerSettingsForm" class="admin-form-panel">
+            <h3 style="font-size: 1rem; color: #fff; margin-bottom: 16px; border-bottom: 1px solid rgba(255,255,255,0.08); padding-bottom: 8px;">1. Kolon: Marka & İletişim Bilgileri</h3>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Footer Logo / Marka Metni</label>
+                <input type="text" id="footer_brandName" class="form-input" required>
+              </div>
+              <div class="form-group">
+                <label>Telefon Numarası (Görünen)</label>
+                <input type="text" id="footer_phone" class="form-input" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Footer Marka Sloganı (Tagline)</label>
+              <input type="text" id="footer_tagline" class="form-input" required>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label>Kurumsal E-Posta</label>
+                <input type="email" id="footer_email" class="form-input" required>
+              </div>
+              <div class="form-group">
+                <label>Ofis / Şirket Adresi</label>
+                <input type="text" id="footer_address" class="form-input" required>
+              </div>
+            </div>
+
+            <h3 style="font-size: 1rem; color: #fff; margin-top: 24px; margin-bottom: 16px; border-bottom: 1px solid rgba(255,255,255,0.08); padding-bottom: 8px;">2. ve 3. Kolon: Menü ve Link Başlıkları</h3>
+            <div class="form-row">
+              <div class="form-group">
+                <label>2. Kolon Başlığı (Hizmetler Kolonu)</label>
+                <input type="text" id="footer_col2Title" class="form-input" required>
+                <small style="color: #64748b; font-size: 0.75rem; display: block; margin-top: 4px;">Bu kolonun altındaki linkler sitenizdeki aktif hizmetlerden otomatik beslenir.</small>
+              </div>
+              <div class="form-group">
+                <label>3. Kolon Başlığı (Kurumsal & Hızlı Linkler Kolonu)</label>
+                <input type="text" id="footer_col3Title" class="form-input" required>
+                <small style="color: #64748b; font-size: 0.75rem; display: block; margin-top: 4px;">Bu kolon altında Uygulamalar, Referanslar, Blog ve özel sayfalarınız listelenir.</small>
+              </div>
+            </div>
+
+            <h3 style="font-size: 1rem; color: #fff; margin-top: 24px; margin-bottom: 16px; border-bottom: 1px solid rgba(255,255,255,0.08); padding-bottom: 8px;">4. Kolon: Canlı Destek & WhatsApp</h3>
+            <div class="form-row">
+              <div class="form-group">
+                <label>4. Kolon Başlığı</label>
+                <input type="text" id="footer_col4Title" class="form-input" required>
+              </div>
+              <div class="form-group">
+                <label>WhatsApp Buton Metni</label>
+                <input type="text" id="footer_whatsappBtnText" class="form-input" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Canlı Destek Açıklama Metni</label>
+              <input type="text" id="footer_col4Desc" class="form-input" required>
+            </div>
+
+            <div class="form-group">
+              <label>WhatsApp Direkt Bağlantısı (URL)</label>
+              <input type="url" id="footer_whatsapp" class="form-input" required>
+            </div>
+
+            <h3 style="font-size: 1rem; color: #fff; margin-top: 24px; margin-bottom: 16px; border-bottom: 1px solid rgba(255,255,255,0.08); padding-bottom: 8px;">Alt Çizgi: Copyright & Sosyal Medya Linkleri</h3>
+            <div class="form-group">
+              <label>Telif / Copyright Metni</label>
+              <input type="text" id="footer_copyright" class="form-input" required>
+            </div>
+
+            <div class="form-row" style="grid-template-columns: repeat(3, 1fr);">
+              <div class="form-group">
+                <label>Instagram URL</label>
+                <input type="url" id="footer_socialInstagram" class="form-input">
+              </div>
+              <div class="form-group">
+                <label>LinkedIn URL</label>
+                <input type="url" id="footer_socialLinkedin" class="form-input">
+              </div>
+              <div class="form-group">
+                <label>Facebook URL</label>
+                <input type="url" id="footer_socialFacebook" class="form-input">
+              </div>
+            </div>
+
+            <div style="margin-top: 24px; text-align: right;">
+              <button type="submit" class="btn-primary" style="padding: 12px 28px; font-size: 0.95rem;">Değişiklikleri Tüm Sitede Yayınla</button>
+            </div>
+          </form>
+        </section>
+
+        <!-- TAB: NAVIGATION (HEADER) -->
+        <section id="tab-navigation" class="admin-tab">
+          <div class="tab-header-row">
+            <div>
+              <h2>Header Menü Yönetimi</h2>
+              <p class="text-muted">Tüm sayfalarda üst menüde gösterilen bağlantıları düzenleyin, yeni bağlantı ekleyin veya sıralayın.</p>
+            </div>
+            <button class="btn-primary" id="btnAddMenuItem">+ Menüye Bağlantı Ekle</button>
+          </div>
+
+          <div class="nav-editor-container">
+            <ul id="menuList" class="menu-editor-list">
+              <!-- Dynamically populated -->
+            </ul>
+            <div class="nav-editor-save">
+              <button class="btn-primary" id="btnSaveMenu">Menü Değişikliklerini Kaydet</button>
+            </div>
+          </div>
+        </section>
+
+        <!-- TAB: HOMEPAGE CAMPAIGN / ANNOUNCEMENT POPUP (WORDPRESS-LIKE) -->
+        <section id="tab-popup" class="admin-tab">
+          <div class="tab-header-row">
+            <div>
+              <h2>Anasayfa Kampanya & Duyuru Popup Yöneticisi</h2>
+              <p class="text-muted">Anasayfaya giren ziyaretçilere gösterilecek yeni ürün lansmanı, indirim veya kampanya bildirim modalını yönetin. Şablon seçebilir veya özel HTML kodu yazabilirsiniz.</p>
+            </div>
+            <div style="display: flex; gap: 10px; align-items: center;">
+              <button type="button" class="btn-secondary" id="btnPreviewPopup" style="background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); color: #fff; padding: 10px 18px; border-radius: 8px; cursor: pointer; font-weight: 600;">Canlı Önizle</button>
+              <button type="button" class="btn-primary" id="btnSavePopupSettings">Değişiklikleri Kaydet</button>
+            </div>
+          </div>
+
+          <form id="popupSettingsForm" class="admin-form-panel">
+            <!-- Status Switch -->
+            <div style="display: flex; align-items: center; justify-content: space-between; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 14px; padding: 18px 22px; margin-bottom: 24px;">
+              <div>
+                <h3 style="font-size: 1.05rem; color: #fff; margin-bottom: 4px;">Popup Durumu</h3>
+                <p style="font-size: 0.85rem; color: var(--admin-muted); margin: 0;">Anasayfada ziyaretçilere kampanya/duyuru popup'ının gösterilmesini aktif veya pasif hale getirin.</p>
+              </div>
+              <div style="display: flex; align-items: center; gap: 14px;">
+                <span id="popupStatusBadge" class="badge-status active" style="font-size: 0.82rem; padding: 6px 14px; border-radius: 999px; font-weight: 700;">YAYINDA (AKTİF)</span>
+                <label style="position: relative; display: inline-block; width: 52px; height: 28px; cursor: pointer; margin-bottom: 0;">
+                  <input type="checkbox" id="popup_enabled" checked style="opacity: 0; width: 0; height: 0;">
+                  <span id="popupSliderToggle" style="position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0; background-color: #22c55e; transition: .3s; border-radius: 34px;"></span>
+                </label>
+              </div>
+            </div>
+
+            <!-- Frequency / Cooldown Control -->
+            <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 14px; padding: 18px 22px; margin-bottom: 24px;">
+              <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; flex-wrap: wrap;">
+                <div>
+                  <h3 style="font-size: 1.02rem; color: #fff; margin-bottom: 4px;">⏱️ Tekrar Gösterim Sıklığı (Ziyaretçiyi Bıktırmama Kuralı)</h3>
+                  <p style="font-size: 0.85rem; color: var(--admin-muted); margin: 0;">Ziyaretçi popup'ı bir kez kapattıktan sonra, belirlenen bekleme süresi dolana kadar anasayfayı yenilese veya tekrar girse bile popup açılmaz.</p>
+                </div>
+                <button type="button" class="btn-action" id="btnResetPopupCooldown" style="background: rgba(227,223,69,0.1); border: 1px solid rgba(227,223,69,0.3); color: var(--admin-accent); font-size: 12px; padding: 8px 14px; border-radius: 8px; cursor: pointer;">
+                  🔄 Bekleme Süresini Sıfırla (Bende Hemen Göster)
+                </button>
+              </div>
+              <div style="margin-top: 14px;">
+                <select id="popup_frequency" class="form-input" style="max-width: 440px; font-weight: 600; background: #16161c;">
+                  <option value="24_hours" selected>Günde 1 Kez (24 Saat Bekleme - Tavsiye Edilen)</option>
+                  <option value="12_hours">12 Saatte 1 Kez</option>
+                  <option value="1_hour">1 Saatte 1 Kez</option>
+                  <option value="3_days">3 Günde 1 Kez</option>
+                  <option value="7_days">Haftada 1 Kez (7 Gün)</option>
+                  <option value="session">Oturum Başına 1 Kez (Tarayıcı kapanana kadar)</option>
+                  <option value="always">Her Sayfa Yenilemesinde Göster (Test Modu)</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Template Picker -->
+            <div class="form-group" style="margin-bottom: 24px;">
+              <label style="font-size: 0.95rem; font-weight: 700; color: #fff; margin-bottom: 10px; display: block;">Popup Tasarım Şablonu Seçin</label>
+              <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px;" id="popupTemplateSelector">
+                <div class="template-card active" data-template="card_visual" id="tmpl_card_visual" style="border: 2px solid var(--admin-accent); background: rgba(227,223,69,0.06); border-radius: 14px; padding: 16px; cursor: pointer; transition: all 0.2s;">
+                  <div style="font-size: 24px; margin-bottom: 8px;">🖼️</div>
+                  <div style="font-weight: 700; color: #fff; font-size: 0.92rem; margin-bottom: 4px;">Lansman & Görsel Kart</div>
+                  <div style="font-size: 0.8rem; color: var(--admin-muted);">Üstte büyük görsel, başlık, rozet, açıklama ve çift buton.</div>
+                </div>
+                <div class="template-card" data-template="minimal_coupon" id="tmpl_minimal_coupon" style="border: 1px solid rgba(255,255,255,0.1); background: rgba(255,255,255,0.02); border-radius: 14px; padding: 16px; cursor: pointer; transition: all 0.2s;">
+                  <div style="font-size: 24px; margin-bottom: 8px;">🎟️</div>
+                  <div style="font-weight: 700; color: #fff; font-size: 0.92rem; margin-bottom: 4px;">Hızlı İndirim & Kupon</div>
+                  <div style="font-size: 0.8rem; color: var(--admin-muted);">Kopyalanabilir kupon kodu, aciliyet bildirimi ve doğrudan link.</div>
+                </div>
+                <div class="template-card" data-template="custom_code" id="tmpl_custom_code" style="border: 1px solid rgba(255,255,255,0.1); background: rgba(255,255,255,0.02); border-radius: 14px; padding: 16px; cursor: pointer; transition: all 0.2s;">
+                  <div style="font-size: 24px; margin-bottom: 8px;">💻</div>
+                  <div style="font-weight: 700; color: #fff; font-size: 0.92rem; margin-bottom: 4px;">Özel Kod & HTML Modu</div>
+                  <div style="font-size: 0.8rem; color: var(--admin-muted);">Kendi özel HTML, CSS ve buton kurgunuzu serbestçe yazın.</div>
+                </div>
+              </div>
+              <input type="hidden" id="popup_template" value="card_visual">
+            </div>
+
+            <!-- Standard Template Fields -->
+            <div id="popupStandardFields">
+              <div class="form-row">
+                <div class="form-group">
+                  <label>Popup Üst Rozeti / Kicker</label>
+                  <input type="text" id="popup_badge" class="form-input" placeholder="Örn: YENİ TEKNOLOJİ LANSMANI">
+                </div>
+                <div class="form-group" id="popupImageGroup">
+                  <label>Görsel Banner URL</label>
+                  <input type="url" id="popup_imageUrl" class="form-input" placeholder="https://images.unsplash.com/... veya /assets/...">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label>Popup Başlığı</label>
+                <input type="text" id="popup_title" class="form-input" required placeholder="Örn: MRC Sanal Kabin & AI Satış Motoru Yayında!">
+              </div>
+
+              <div class="form-group">
+                <label>Açıklama Metni</label>
+                <textarea id="popup_content" class="form-textarea" rows="3" placeholder="Ziyaretçilere iletmek istediğiniz kampanya veya ürün mesajı..."></textarea>
+              </div>
+
+              <!-- Coupon specific field -->
+              <div class="form-group" id="popupCouponRow" style="display: none;">
+                <label>İndirim / Kupon Kodu</label>
+                <input type="text" id="popup_couponCode" class="form-input" placeholder="Örn: MRC2026">
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label>Birincil Buton Metni</label>
+                  <input type="text" id="popup_btnText" class="form-input" placeholder="Örn: Sanal Kabin'i İncele">
+                </div>
+                <div class="form-group">
+                  <label>Birincil Buton Linki (URL)</label>
+                  <input type="text" id="popup_btnUrl" class="form-input" placeholder="Örn: /uygulamalar.html veya https://...">
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label>İkincil Buton Metni (Opsiyonel)</label>
+                  <input type="text" id="popup_secondaryBtnText" class="form-input" placeholder="Örn: WhatsApp Demo Hattı">
+                </div>
+                <div class="form-group">
+                  <label>İkincil Buton Linki (Opsiyonel)</label>
+                  <input type="text" id="popup_secondaryBtnUrl" class="form-input" placeholder="Örn: https://api.whatsapp.com/...">
+                </div>
+              </div>
+            </div>
+
+            <!-- Custom Code Field -->
+            <div id="popupCustomCodeField" style="display: none;">
+              <div class="form-group">
+                <label>Özel HTML / Kod (HTML etiketleri, stil ve bağlantılar yazabilirsiniz)</label>
+                <textarea id="popup_customHtml" class="form-textarea" rows="10" placeholder="<div style='text-align: center; padding: 24px; color: #fff;'>\n  <h2 style='color: #e3df45;'>Özel Kampanya</h2>\n  <p>Detaylı açıklama ve teklifler...</p>\n  <a href='/uygulamalar.html' class='btn-primary' style='display: inline-block; margin-top: 14px;'>Hemen Katıl</a>\n</div>"></textarea>
+              </div>
+            </div>
+          </form>
+        </section>
+
+        <!-- TAB: SETTINGS -->
+        <section id="tab-settings" class="admin-tab">
+          <div class="tab-header-row">
+            <div>
+              <h2>Site Genel & İletişim Ayarları</h2>
+              <p class="text-muted">Telefon, WhatsApp, e-posta, şirket adresi ve kurumsal bilgileri güncelleyin.</p>
+            </div>
+            <button class="btn-primary" id="btnSaveSettings">Ayarları Kaydet</button>
+          </div>
+
+          <form id="siteSettingsForm" class="admin-form-panel">
+            <div class="form-row">
+              <div class="form-group">
+                <label>Ajans Marka Adı</label>
+                <input type="text" id="setting_brandName" class="form-input" required>
+              </div>
+              <div class="form-group">
+                <label>Kısa İsim / Logo Yazısı</label>
+                <input type="text" id="setting_shortName" class="form-input" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Slogan (Tagline)</label>
+              <input type="text" id="setting_tagline" class="form-input" required>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label>Telefon Numarası (Görünen)</label>
+                <input type="text" id="setting_phone" class="form-input" required>
+              </div>
+              <div class="form-group">
+                <label>E-Posta Adresi</label>
+                <input type="email" id="setting_email" class="form-input" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>WhatsApp Direkt Bağlantısı (URL)</label>
+              <input type="url" id="setting_whatsapp" class="form-input" required>
+            </div>
+
+            <div class="form-group">
+              <label>Ofis Adresi</label>
+              <input type="text" id="setting_address" class="form-input" required>
+            </div>
+
+            <div class="form-group">
+              <label>Footer Telif / Copyright Metni</label>
+              <input type="text" id="setting_copyright" class="form-input" required>
+            </div>
+          </form>
+        </section>
+
+        <!-- TAB: THEME & ACCENT COLOR -->
+        <section id="tab-theme" class="admin-tab">
+          <div class="tab-header-row">
+            <div>
+              <h2>Site Tema & Vurgu Rengi Yönetimi</h2>
+              <p class="text-muted">Sitedeki tüm sarı vurgu alanlarını, rozetleri, hover efektlerini ve buton parlamalarını dilediğiniz kurumsal renkle anında değiştirin.</p>
+            </div>
+            <button class="btn-primary" id="btnSaveTheme">Rengi Kaydet & Canlıya Uygula</button>
+          </div>
+
+          <div class="admin-grid-2">
+            <!-- Sol Panel: Renk Seçici ve Hazır Paletler -->
+            <div class="admin-card">
+              <h3 style="margin-bottom: 8px;">Vurgu Rengi (Accent Color)</h3>
+              <p class="text-muted text-sm" style="margin-bottom: 20px;">İster renk paletinden serbestçe seçin, ister alttaki hazır lüks & modern tonlardan tek tıkla uygulayın.</p>
+
+              <div class="color-picker-group">
+                <div class="color-picker-box">
+                  <input type="color" id="themeAccentColorPicker" class="color-input" value="#e3df45">
+                  <div class="color-picker-info">
+                    <label class="text-xs text-muted" style="font-weight: 700; letter-spacing: 0.06em;">SEÇİLEN HEX KODU</label>
+                    <input type="text" id="themeAccentColorHex" class="form-input form-input-mono" value="#e3df45" placeholder="#e3df45" maxlength="7">
+                  </div>
+                </div>
+              </div>
+
+              <div style="margin-top: 24px;">
+                <label class="text-xs text-muted" style="display:block; margin-bottom: 12px; font-weight:700; letter-spacing:0.06em;">ÖNERİLEN KURUMSAL & LÜKS RENK PALETLERİ</label>
+                <div class="color-preset-pills" id="colorPresetPills">
+                  <button type="button" class="preset-pill active" data-color="#e3df45" style="--pill-color: #e3df45;">
+                    <span class="preset-swatch"></span>
+                    <span class="preset-name">MRC Elektrik Sarısı (Orijinal)</span>
+                    <span class="preset-hex">#e3df45</span>
+                  </button>
+                  <button type="button" class="preset-pill" data-color="#d4af37" style="--pill-color: #d4af37;">
+                    <span class="preset-swatch"></span>
+                    <span class="preset-name">Lüks Altın (Luxury Gold)</span>
+                    <span class="preset-hex">#d4af37</span>
+                  </button>
+                  <button type="button" class="preset-pill" data-color="#a3e635" style="--pill-color: #a3e635;">
+                    <span class="preset-swatch"></span>
+                    <span class="preset-name">Cyber Lime (Neon Yeşil)</span>
+                    <span class="preset-hex">#a3e635</span>
+                  </button>
+                  <button type="button" class="preset-pill" data-color="#38bdf8" style="--pill-color: #38bdf8;">
+                    <span class="preset-swatch"></span>
+                    <span class="preset-name">Electric Sky (Yüksek Teknoloji)</span>
+                    <span class="preset-hex">#38bdf8</span>
+                  </button>
+                  <button type="button" class="preset-pill" data-color="#a855f7" style="--pill-color: #a855f7;">
+                    <span class="preset-swatch"></span>
+                    <span class="preset-name">Neo Violet (Gelecekçi Mor)</span>
+                    <span class="preset-hex">#a855f7</span>
+                  </button>
+                  <button type="button" class="preset-pill" data-color="#10b981" style="--pill-color: #10b981;">
+                    <span class="preset-swatch"></span>
+                    <span class="preset-name">Zümrüt Yeşili (Emerald)</span>
+                    <span class="preset-hex">#10b981</span>
+                  </button>
+                  <button type="button" class="preset-pill" data-color="#f97316" style="--pill-color: #f97316;">
+                    <span class="preset-swatch"></span>
+                    <span class="preset-name">Sunset Coral (Canlı Turuncu)</span>
+                    <span class="preset-hex">#f97316</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Sağ Panel: Canlı UI Önizleme Kartı -->
+            <div class="admin-card">
+              <h3 style="margin-bottom: 8px;">Canlı UI Önizlemesi</h3>
+              <p class="text-muted text-sm" style="margin-bottom: 20px;">Seçtiğiniz vurgu rengi sitedeki buton, rozet ve metinlerde aşağıdaki gibi görünür:</p>
+
+              <div class="theme-preview-stage" id="themePreviewStage">
+                <div class="preview-badge-row">
+                  <span class="preview-badge">YENİ NESİL ÇÖZÜMLER</span>
+                  <span class="preview-dot"></span>
+                  <span class="preview-metric">+%280 ROAS</span>
+                </div>
+
+                <h4 class="preview-title">Markanız için <span class="preview-highlight">rekor satış</span> ve ciro grafikleri inşa ediyoruz.</h4>
+
+                <div class="preview-actions-row">
+                  <button type="button" class="preview-btn-solid">Projeyi Başlat →</button>
+                  <button type="button" class="preview-btn-outline">Uygulamaları Keşfet</button>
+                </div>
+
+                <div class="preview-card-item">
+                  <div class="preview-card-icon">⚡</div>
+                  <div>
+                    <div class="preview-card-title">Canlı Destek & WhatsApp Asistanı</div>
+                    <div class="preview-card-desc">Dijital reklam, sepet otomasyonu ve dönüşüm optimizasyonu</div>
+                  </div>
+                </div>
+
+                <div class="preview-footer-hint">
+                  <span>💡 Not: "Rengi Kaydet" butonuna bastığınız anda tüm sitede (Ana Sayfa, Referanslar, Hizmetler, Blog vb.) anında aktif olur.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- TAB: TRACKING & ADVERTISING (META PIXEL & GA4) -->
+        <section id="tab-tracking" class="admin-tab">
+          <div class="tab-header-row">
+            <div>
+              <h2>Piksel & Reklam Takip Kodları (Meta Pixel & GA4)</h2>
+              <p class="text-muted">Instagram/Facebook Ads ve Google Ads kampanyalarınız için gerekli takip kodlarını tanımlayın. Sitede reklam verildiğinde tüm veriler eksiksiz ölçülür.</p>
+            </div>
+            <button class="btn-primary" id="btnSaveTracking">Takip Kodlarını Kaydet</button>
+          </div>
+
+          <form id="siteTrackingForm" class="admin-form-panel">
+            <!-- Meta Ads / Facebook Pixel -->
+            <div class="admin-tracking-card">
+              <div class="tracking-card-head">
+                <div class="tracking-icon meta-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.04c-5.5 0-10 4.49-10 10.02 0 5 3.66 9.15 8.44 9.9v-7H7.9v-2.9h2.54V9.85c0-2.51 1.49-3.89 3.78-3.89 1.09 0 2.23.19 2.23.19v2.47h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.45 2.9h-2.33v7a10 10 0 0 0 8.44-9.9c0-5.53-4.5-10.02-10-10.02z"/></svg>
+                </div>
+                <div>
+                  <h3 class="tracking-title">Meta (Facebook & Instagram) Pixel</h3>
+                  <p class="text-muted text-sm">Instagram ve Facebook reklamlarınız için PageView ve form doldurma (Lead) dönüşümlerini otomatik takip eder.</p>
+                </div>
+                <span id="metaPixelStatusBadge" class="status-pill status-ready">Bekliyor</span>
+              </div>
+              <div class="form-group" style="margin-top: 14px;">
+                <label>Meta Pixel ID (Dataset ID)</label>
+                <div class="input-with-hint">
+                  <input type="text" id="track_metaPixelId" class="form-input form-input-mono" placeholder="Örn: 987654321012345">
+                  <span class="input-hint">Meta Business Suite > Olay Yöneticisi (Events Manager) ekranından alabilirsiniz. Otomatik fbq('init') ve fbq('track', 'PageView') çalıştırır.</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Google Analytics 4 (GA4) -->
+            <div class="admin-tracking-card">
+              <div class="tracking-card-head">
+                <div class="tracking-icon google-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.133 0 12.48 0 5.867 0 .307 5.387.307 12s5.56 12 12.173 12c3.573 0 6.267-1.173 8.373-3.36 2.16-2.16 2.84-5.213 2.84-7.667 0-.76-.053-1.467-.173-2.053H12.48z"/></svg>
+                </div>
+                <div>
+                  <h3 class="tracking-title">Google Analytics 4 (GA4)</h3>
+                  <p class="text-muted text-sm">Google Analytics 4 oturum, ziyaretçi trafiği ve kampanya kaynaklarını izler.</p>
+                </div>
+                <span id="gaStatusBadge" class="status-pill status-ready">Bekliyor</span>
+              </div>
+              <div class="form-group" style="margin-top: 14px;">
+                <label>GA4 Ölçüm Kimliği (Measurement ID)</label>
+                <div class="input-with-hint">
+                  <input type="text" id="track_gaMeasurementId" class="form-input form-input-mono" placeholder="Örn: G-XXXXXXXXXX">
+                  <span class="input-hint">Google Analytics > Yönetici > Veri Akışları (Data Streams) > Ölçüm Kimliği. Otomatik gtag.js scripti yükler.</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Google Tag Manager (GTM) -->
+            <div class="admin-tracking-card">
+              <div class="tracking-card-head">
+                <div class="tracking-icon gtm-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                </div>
+                <div>
+                  <h3 class="tracking-title">Google Tag Manager (GTM)</h3>
+                  <p class="text-muted text-sm">Tüm reklam ve analitik etiketlerinizi tek konteyner üzerinden yönetmek için.</p>
+                </div>
+                <span id="gtmStatusBadge" class="status-pill status-ready">Bekliyor</span>
+              </div>
+              <div class="form-group" style="margin-top: 14px;">
+                <label>GTM Konteyner ID</label>
+                <div class="input-with-hint">
+                  <input type="text" id="track_gtmContainerId" class="form-input form-input-mono" placeholder="Örn: GTM-XXXXXXX">
+                  <span class="input-hint">Tag Manager panelinin sağ üst köşesinde yer alan kimlik kodudur.</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Özel Kod Alanları -->
+            <div class="admin-card" style="margin-top: 24px; padding: 22px;">
+              <h3 style="margin-bottom: 6px;">Özel Takip & Dönüşüm Kodları</h3>
+              <p class="text-muted text-sm" style="margin-bottom: 18px;">TikTok Pixel, Yandex Metrica, Hotjar, Google Ads Dönüşüm Etiketi vb. özel kodlarınızı buraya ekleyebilirsiniz.</p>
+
+              <div class="form-group">
+                <label>Özel &lt;head&gt; Kodları (Tüm sayfaların &lt;head&gt; etiketine eklenir)</label>
+                <textarea id="track_customHeadCode" class="form-textarea form-textarea-mono" rows="4" placeholder="<!-- &lt;script&gt; ... &lt;/script&gt; -->"></textarea>
+              </div>
+
+              <div class="form-group" style="margin-top: 16px;">
+                <label>Özel &lt;body&gt; Kodları (Tüm sayfaların &lt;body&gt; kapanışından önce eklenir)</label>
+                <textarea id="track_customBodyCode" class="form-textarea form-textarea-mono" rows="3" placeholder="<!-- Özel body kodları veya noscript pikselleri -->"></textarea>
+              </div>
+            </div>
+
+            <!-- Test & Doğrulama Paneli -->
+            <div class="tracking-test-box">
+              <div class="test-box-header">
+                <span class="test-box-icon">⚡</span>
+                <div>
+                  <strong>Canlı Takip Doğrulama & Test Aracı</strong>
+                  <p class="text-xs text-muted" style="margin: 0;">Girdiğiniz pikseller kaydedildiğinde sitenin tüm sayfalarında canlıya alınır ve form / canlı destek başvurularında otomatik 'Lead' dönüşümü tetiklenir.</p>
+                </div>
+              </div>
+              <button type="button" class="btn-secondary" id="btnTestPixelEvent">Piksel Test Olayı Gönder (Console Test)</button>
+            </div>
+          </form>
+        </section>
+
+        <!-- TAB: INQUIRIES -->
+        <section id="tab-inquiries" class="admin-tab">
+          <div class="tab-header-row">
+            <div>
+              <h2>Gelen Müşteri Başvuruları & Teklif Talepleri</h2>
+              <p class="text-muted">Web sitenizdeki teklif formundan gönderilen tüm mesajlar anında burada listelenir.</p>
+            </div>
+          </div>
+
+          <div class="table-responsive">
+            <table class="admin-table">
+              <thead>
+                <tr>
+                  <th>Tarih</th>
+                  <th>Ad Soyad</th>
+                  <th>Telefon / E-Posta</th>
+                  <th>İlgilenilen Hizmet</th>
+                  <th>Bütçe</th>
+                  <th>Mesaj Detayı</th>
+                  <th>İşlem</th>
+                </tr>
+              </thead>
+              <tbody id="inquiriesTableBody">
+                <!-- Dynamically populated -->
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <!-- MODAL: SERVICE ADD / EDIT -->
+  <div id="serviceModal" class="admin-modal">
+    <div class="modal-backdrop"></div>
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3 id="serviceModalTitle">Yeni Hizmet Ekle</h3>
+        <button class="modal-close" onclick="window.adminApp.closeModal('serviceModal')">&times;</button>
+      </div>
+      <form id="serviceForm">
+        <input type="hidden" id="svc_id">
+        <div class="form-row">
+          <div class="form-group">
+            <label>Tür / Tip</label>
+            <select id="svc_type" class="form-input">
+              <option value="Hizmet">Profesyonel Hizmet</option>
+              <option value="Ürün / Yazılım">Yazılım & Teknoloji Ürünü (App / SaaS)</option>
+              <option value="Paket">Büyüme & Reklam Paketi</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Özel Rozet / Badge (Opsiyonel)</label>
+            <input type="text" id="svc_badge" class="form-input" placeholder="Örn: TESCİLLİ UYGULAMA, POPÜLER">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Hizmet / Ürün Başlığı</label>
+          <input type="text" id="svc_title" class="form-input" required placeholder="Örn: WhatsApp Satış & Sepet Otomasyonu">
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label>Kategori / Sektör</label>
+            <input type="text" id="svc_category" class="form-input" required placeholder="Örn: E-Ticaret & Yazılım">
+          </div>
+          <div class="form-group">
+            <label>Fiyat / Ücret Bilgisi (Opsiyonel)</label>
+            <input type="text" id="svc_price" class="form-input" placeholder="Örn: 45.000 ₺ / Ay veya Ücretsiz Demo">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label>İkon Tipi</label>
+            <select id="svc_icon" class="form-input">
+              <option value="target">Hedef (Target)</option>
+              <option value="layout">Tasarım (Layout)</option>
+              <option value="code">Kod & Yazılım (Code)</option>
+              <option value="trending-up">Büyüme (Trending Up)</option>
+              <option value="search">Arama / Google (Search)</option>
+              <option value="globe">Global / SEO (Globe)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Demo / Doğrudan Link (Opsiyonel)</label>
+            <input type="text" id="svc_link" class="form-input" placeholder="Örn: /iletisim.html veya https://...">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Kısa Özet (Kart Metni)</label>
+          <input type="text" id="svc_summary" class="form-input" required placeholder="1-2 cümlelik vurucu özet">
+        </div>
+        <div class="form-group">
+          <label>Detaylı Açıklama</label>
+          <textarea id="svc_desc" class="form-textarea" rows="3" required placeholder="Hizmet veya ürün kapsamı"></textarea>
+        </div>
+        <div class="form-group">
+          <label>Öne Çıkan Özellikler (Her satıra bir özellik yazın)</label>
+          <textarea id="svc_features" class="form-textarea" rows="4" placeholder="Anlık Müşteri & Sepet Analizi&#10;Otomatik Sepet Terk Kurtarma&#10;Sipariş & Kargo Bildirimleri"></textarea>
+        </div>
+        <div class="modal-actions">
+          <button type="button" class="btn-cancel" onclick="window.adminApp.closeModal('serviceModal')">İptal</button>
+          <button type="submit" class="btn-primary">Kaydet</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- MODAL: REFERENCE ADD -->
+  <div id="referenceModal" class="admin-modal">
+    <div class="modal-backdrop"></div>
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3>Yeni Referans Marka Ekle</h3>
+        <button class="modal-close" onclick="window.adminApp.closeModal('referenceModal')">&times;</button>
+      </div>
+      <form id="referenceForm">
+        <div class="form-group">
+          <label>Marka / Firma Adı</label>
+          <input type="text" id="ref_name" class="form-input" required placeholder="Örn: Butik Modam">
+        </div>
+        <div class="form-group">
+          <label>Sektör / Kategori</label>
+          <input type="text" id="ref_category" class="form-input" required placeholder="Örn: Moda & E-Ticaret">
+        </div>
+        <div class="form-group">
+          <label>Logo Görsel URL</label>
+          <input type="url" id="ref_logo" class="form-input" required placeholder="https://cdn.example.com/logo.webp">
+          <small class="form-hint">Transparan veya beyaz logolu PNG/WEBP URL'si girin.</small>
+        </div>
+        <div class="modal-actions">
+          <button type="button" class="btn-cancel" onclick="window.adminApp.closeModal('referenceModal')">İptal</button>
+          <button type="submit" class="btn-primary">Referansı Ekle</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- MODAL: BLOG ADD / EDIT -->
+  <div id="blogModal" class="admin-modal">
+    <div class="modal-backdrop"></div>
+    <div class="modal-dialog modal-large">
+      <div class="modal-header">
+        <h3 id="blogModalTitle">Yeni Blog Yazısı Yaz</h3>
+        <button class="modal-close" onclick="window.adminApp.closeModal('blogModal')">&times;</button>
+      </div>
+      <form id="blogForm">
+        <input type="hidden" id="blog_id">
+        <div class="form-group">
+          <label>Makale Başlığı</label>
+          <input type="text" id="blog_title" class="form-input" required placeholder="Örn: 2026'da E-Ticaret Satışlarını Katlayan WhatsApp Stratejileri">
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Kategori</label>
+            <input type="text" id="blog_category" class="form-input" required placeholder="Örn: E-Ticaret & WhatsApp">
+          </div>
+          <div class="form-group">
+            <label>Okuma Süresi</label>
+            <input type="text" id="blog_readTime" class="form-input" value="4 dk okuma" required>
+          </div>
+          <div class="form-group">
+            <label>Yazar</label>
+            <input type="text" id="blog_author" class="form-input" value="MRC Strateji Ekibi" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Kısa Özet</label>
+          <textarea id="blog_summary" class="form-textarea" rows="2" required placeholder="Listeleme kartında görünecek kısa giriş metni"></textarea>
+        </div>
+        <div class="form-group">
+          <label>Makale İçeriği (HTML formatında yazabilirsiniz: &lt;p&gt;, &lt;h3&gt;, &lt;ul&gt;)</label>
+          <textarea id="blog_content" class="form-textarea" rows="8" required placeholder="<p>Giriş paragrafı...</p><h3>Alt Başlık</h3><p>Detaylı bilgiler...</p>"></textarea>
+        </div>
+        <div class="modal-actions">
+          <button type="button" class="btn-cancel" onclick="window.adminApp.closeModal('blogModal')">İptal</button>
+          <button type="submit" class="btn-primary">Yazıyı Yayınla</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- MODAL: PAGE BUILDER -->
+  <div id="pageModal" class="admin-modal">
+    <div class="modal-backdrop"></div>
+    <div class="modal-dialog modal-large">
+      <div class="modal-header">
+        <h3 id="pageModalTitle">Yeni Özel Sayfa Oluştur</h3>
+        <button class="modal-close" onclick="window.adminApp.closeModal('pageModal')">&times;</button>
+      </div>
+      <form id="customPageForm">
+        <input type="hidden" id="cp_id">
+        <div class="form-row">
+          <div class="form-group">
+            <label>Sayfa Başlığı</label>
+            <input type="text" id="cp_title" class="form-input" required placeholder="Örn: Hakkımızda & Ekibimiz">
+          </div>
+          <div class="form-group">
+            <label>URL Slug (Örn: hakkimizda)</label>
+            <input type="text" id="cp_slug" class="form-input" placeholder="Boş bırakılırsa başlıktan otomatik üretilir">
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Alt Başlık / Hero Açıklaması</label>
+          <input type="text" id="cp_subtitle" class="form-input" required placeholder="Sayfanın üst banner'ında yer alacak açıklayıcı cümle">
+        </div>
+        <div class="form-group">
+          <label>Sayfa İçeriği (HTML ve Zengin Metin)</label>
+          <textarea id="cp_content" class="form-textarea" rows="10" required placeholder="<h3>Vizyonumuz</h3><p>Metin buraya gelecek...</p>"></textarea>
+        </div>
+        <div class="form-row" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 14px 16px; margin-bottom: 16px;">
+          <div class="form-group" style="margin-bottom: 0; display: flex; align-items: center; gap: 10px;">
+            <input type="checkbox" id="cp_showInHeader" style="width: 18px; height: 18px; accent-color: var(--admin-accent); cursor: pointer;">
+            <label for="cp_showInHeader" style="margin-bottom: 0; cursor: pointer; font-size: 13.5px; color: #fff;">Üst Menüde Göster (Desktop Header)</label>
+          </div>
+          <div class="form-group" style="margin-bottom: 0; display: flex; align-items: center; gap: 10px;">
+            <input type="checkbox" id="cp_showInMobile" checked style="width: 18px; height: 18px; accent-color: var(--admin-accent); cursor: pointer;">
+            <label for="cp_showInMobile" style="margin-bottom: 0; cursor: pointer; font-size: 13.5px; color: #fff;">Hamburger / Mobil Menüde Göster</label>
+          </div>
+        </div>
+        <div class="modal-actions">
+          <button type="button" class="btn-cancel" onclick="window.adminApp.closeModal('pageModal')">İptal</button>
+          <button type="submit" class="btn-primary">Sayfayı Kaydet & Yayınla</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- MODAL: MENU ITEM ADD -->
+  <div id="menuModal" class="admin-modal">
+    <div class="modal-backdrop"></div>
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3>Menüye Yeni Bağlantı Ekle</h3>
+        <button class="modal-close" onclick="window.adminApp.closeModal('menuModal')">&times;</button>
+      </div>
+      <form id="menuItemForm">
+        <div class="form-group">
+          <label>Menü Etiketi (Görünen İsim)</label>
+          <input type="text" id="menu_label" class="form-input" required placeholder="Örn: Özel Sayfam">
+        </div>
+        <div class="form-group">
+          <label>Yönlendirilecek URL</label>
+          <input type="text" id="menu_url" class="form-input" required placeholder="Örn: /sayfa.html?slug=ozel-sayfam veya /hizmetler.html">
+        </div>
+        <div class="modal-actions">
+          <button type="button" class="btn-cancel" onclick="window.adminApp.closeModal('menuModal')">İptal</button>
+          <button type="submit" class="btn-primary">Bağlantıyı Ekle</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- MODAL: APP ADD / EDIT -->
+  <div id="appModal" class="admin-modal">
+    <div class="modal-backdrop"></div>
+    <div class="modal-dialog modal-large">
+      <div class="modal-header">
+        <h3 id="appModalTitle">Yeni Uygulama & Teknoloji Ekle</h3>
+        <button class="modal-close" onclick="window.adminApp.closeModal('appModal')">&times;</button>
+      </div>
+      <form id="appForm">
+        <input type="hidden" id="app_modal_id">
+        <div class="form-row">
+          <div class="form-group">
+            <label>Uygulama / Teknoloji Adı</label>
+            <input type="text" id="app_modal_name" class="form-input" required placeholder="Örn: Sanal Kabin veya MRC Dijital App">
+          </div>
+          <div class="form-group">
+            <label>Üst Rozet (Badge)</label>
+            <input type="text" id="app_modal_badge" class="form-input" required placeholder="Örn: YAPAY ZEKA DENEME KABİNİ">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Kategori</label>
+            <input type="text" id="app_modal_category" class="form-input" required placeholder="Örn: AI & Moda Teknolojisi">
+          </div>
+          <div class="form-group">
+            <label>Başarı Metriği / Vurgusu</label>
+            <input type="text" id="app_modal_metric" class="form-input" placeholder="Örn: %62 Daha Az İade · 2.8x Satış Artışı">
+          </div>
+          <div class="form-group">
+            <label>Uygulama / Demo Linki</label>
+            <input type="text" id="app_modal_link" class="form-input" placeholder="Örn: https://mrcdijitalapp.com veya #demo-sanal-kabin">
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Vurucu Başlık</label>
+          <input type="text" id="app_modal_title" class="form-input" required placeholder="Örn: Yapay Zeka Destekli Sanal Kabin: Müşterileriniz Kıyafetleri Kendi Üzerinde Canlı Denesin">
+        </div>
+        <div class="form-group">
+          <label>Tanıtım & Açıklama Metni</label>
+          <textarea id="app_modal_desc" class="form-textarea" rows="3" required placeholder="Uygulamanın ne işe yaradığını ve markaya sağladığı katma değeri açıklayın"></textarea>
+        </div>
+
+        <div class="section-divider"></div>
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+          <h4 style="margin: 0; font-size: 0.95rem; color: #fff;">Öne Çıkan Özellik Maddeleri</h4>
+          <button type="button" class="btn-action btn-sm" id="btnAddAppFeatureRow" style="padding: 4px 10px; font-size: 0.78rem;">+ Özellik Ekle</button>
+        </div>
+        <div id="appModalFeaturesContainer" class="app-modal-features-list">
+          <!-- Dynamic feature item rows -->
+        </div>
+
+        <div class="modal-actions" style="margin-top: 20px;">
+          <button type="button" class="btn-cancel" onclick="window.adminApp.closeModal('appModal')">İptal</button>
+          <button type="submit" class="btn-primary">Uygulamayı Kaydet</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- MODAL: POPUP LIVE PREVIEW -->
+  <div id="popupPreviewModal" class="admin-modal" style="z-index: 99999;">
+    <div class="modal-backdrop" onclick="window.adminApp.closeModal('popupPreviewModal')"></div>
+    <div class="campaign-modal-dialog" id="adminPopupPreviewContainer" style="z-index: 100000; margin: auto;">
+      <!-- Populated via admin.js previewPopup() -->
+    </div>
+  </div>
+
+</body>
+</html>
